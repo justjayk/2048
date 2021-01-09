@@ -1,16 +1,17 @@
 # 2048 in java #
 a simple implement of [2048] using java.
-there is the online version, [Play it here!](http://gabrielecirulli.github.io/2048/)
-[2048]: https://github.com/gabrielecirulli/2048/
+credits to Alwayswithme for the template:
+https://github.com/Alwayswithme/2048.java
 
 ### Development ###
 
 some ideas behind the game.
 
 * Tiles are drawn by java.awt.Graphics.
-* Single dimensional arrays to simulate coordinate system. tiles[x + y * 4] get the tile in (x, y)
-* A movements just move all the tile to one direction, then merge it ASAP.
-* The movements to different direction is using rotate to do so.
+* Single dimensional arrays to simulate coordinate system.
+* Generalizing movement to apply to all four directions, merging and then placing tiles.
+* This project focused heavily on designing a games algorithim from the beginning, then its implementation.
+* Used object oriented programming to design the games logic and system.
 
 
 ### Requirements ###
@@ -30,11 +31,6 @@ $ >  java -cp bin phx.GUI2048     # enjoy
 2. a vi-like keybindind also OK :)
 3. press 'r' to start new game.
 
-### BUGS ###
+### TO-DO ###
 
-* Didn't implements score
-
-### FIXME ###
-- All tiles move all the way across
-- All sets combine, but only once per move
-- If three of same num, the two closest to direction they're moving combine
+* Could implement a scoring system.
